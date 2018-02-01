@@ -1,4 +1,9 @@
 maven_jar(
-	name="checker",
-	artifact="org.checkerframework:checker:2.3.1"
+	name='jsr305',
+	artifact='com.google.code.findbugs:jsr305:3.0.2',
+)
+
+maven_jar(
+	name="nullaway",
+	artifact="com.uber.nullaway:nullaway:0.3.2"
 )

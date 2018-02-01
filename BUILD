@@ -1,12 +1,6 @@
 java_library(
 	name='x',
 	srcs=['X.java'],
-	deps=['@checker//jar'],
-	plugins=['checker'],
-)
-
-java_plugin(
-	name='checker',
-	deps=['@checker//jar'],
-	processor_class='org.checkerframework.checker.nullness.NullnessChecker',
+	deps=['@jsr305//jar', '@nullaway//jar'],
+	javacopts=['-Xep:NullAway:ERROR', '-XepOpt:NullAway:AnnotatedPackages=com.example'],
 )

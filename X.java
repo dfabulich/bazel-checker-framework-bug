@@ -1,3 +1,4 @@
+package com.example;
 import javax.annotation.Nonnull;
 public class X {
 	public static void main(String[] args) {
@@ -12,4 +13,7 @@ public class X {
 	private String method() {
 		return null;
 	}
+
 }
+
+
